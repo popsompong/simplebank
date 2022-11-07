@@ -1,6 +1,7 @@
 postgres:
 	docker run -d \
 	--name postgres12 \
+	--network bank-network
 	-e POSTGRES_PASSWORD=secret \
 	-e POSTGRES_USER=root \
 	-p 5432:5432 \
